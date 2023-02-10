@@ -1,0 +1,29 @@
+<body>
+  <h1>メッセージをクリップボードへコピー</h1>
+  <section>
+    <h2>
+      メッセージを取得し、コピーします。
+    </h2>
+    <p>
+      <label for="token">Discord Botのトークン：</label>
+      <input type="text" id="token" />
+    </p>
+    <p>
+      <label for="channel">取得先チャンネルID：</label>
+      <input type="text" id="channel" />
+    </p>
+    <p>
+      <button type="button" onClick="startFetching()">
+        コピー
+      </button>
+    </p>
+  </section>
+  
+  <section>
+    <h2>
+      取得したのは以下の内容でした。
+    </h2>
+    <textarea id="output" readonly></textarea>
+  </section>
+  <script src="index.js"></script>
+</body>
