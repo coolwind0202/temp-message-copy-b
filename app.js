@@ -25,7 +25,7 @@ const fetchMessages = async (token, channelId) => {
   const headers = { "Authorization": `Bot ${token}` };
   const result = await fetch(endpoint, { headers });
   const json = await result.json();
-  return  json;
+  return json;
 }
 
 app.get("/", (req, res) => {
